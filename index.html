@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang=de>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Mouad Lissoufi — Portfolio</title>
+  <link rel=stylesheet href=style.css>
+  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XXXXXXXXXX'); // <-- Replace with your GA4 Measurement ID
+  </script>
+  <script>
+    const whatsappBtn = document.querySelector(".whatsapp-float");
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener("click", () => {
+        gtag('event', 'whatsapp_click', {
+          'event_category': 'engagement',
+          'event_label': 'Floating WhatsApp Button'
+        });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <header class=site-header>
+    <div class=header-inner>
+      <div class=flag-container>
+        <a href="index.html"><img src=ma.jpg alt=Marokko class=flag-icon title=Marokko>
+          <img src=de.jpg alt=Deutschland class=flag-icon title=Deutschland></a>
+      </div>
+      <div class=header-space aria-hidden=true></div>
+      <button id=hamburger class=hamburger aria-label="Öffne Menü" aria-expanded=false>
+        <i class="fa-solid fa-bars open-icon"></i>
+        <i class="fa-solid fa-xmark close-icon" aria-hidden=true></i>
+      </button>
+      <nav id=sideMenu class=side-menu aria-hidden=true>
+        <ul class=menu-list>
+          <li><button class="menu-btn active" data-section=about><i class="fa-solid fa-user"></i> Lebenslauf</button>
+          </li>
+          <li><button class=menu-btn data-section=motivation><i class="fa-solid fa-pen"></i>Anschreiben</button></li>
+          <li><button class=menu-btn data-section=photos><i class="fa-solid fa-file "></i> Schulzeugnisse</button>
+          <li><button class=menu-btn data-section=photos1><i class="fa-solid fa-file "></i> Arbeitszeugnisse</button>
+          <li><button class=menu-btn data-section=photos2><i class="fa-solid fa-file "></i> Sprachnachweis</button>
+        
+        </ul>
+      </nav>
+      <div id=overlay class=overlay aria-hidden=true></div>
+    </div>
+  </header>
+  <main class=main-wrap>
+    <div class=container>
+      <aside class=left-column>
+        <div class="profile-card fade-in">
+          <div class=avatar-wrap>
+            <img src=ml3.jpg alt=Profilfoto class=avatar>
+          </div>
+          <h2 class=name>Mouad Lissoufi</h2>
+          <div class=contact-list>
+            <div class=contact-item><i class="fa-solid fa-calendar"></i> 13. april 2000</div>
+            <div class=contact-item><i class="fa-solid fa-location-dot"></i> Beni Mellal, Marokko</div>
+            <div class=contact-item><i class="fa-solid fa-envelope"></i> mouadlissoufi@gmail.com</div>
+            <div class=contact-item><i class="fa-solid fa-phone"></i> +212 648 219 775</div>
+          </div>
+          <div class=social-icons>
+            <a href=https://www.linkedin.com/in/mouad-lissoufi title=LinkedIn target=_blank>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <a href="Unterlagen-mouad/Lebenslauf-Mouad-lissoufi.pdf" class=btn-download target=_blank>
+            <i class="fa-solid fa-download"></i> Lebenslauf herunterladen
+          </a>
+
+        </div>
+      </aside>
+
+      <section class=right-column>
+        <article id=about class="panel active-panel fade-in">
+          <h2 class=section-heading><i class="fa-solid fa-user"></i> Über mich</h2>
+          <p class="profile-paragraph fade-in" style=text-align:justify>
+            Ich bin ein motivierter Fachinformatiker mit über 4 Jahren Erfahrung im IT-Support und in Netzwerken. Ich
+            verfüge über sehr gute Kenntnisse in GLPI, Helpdesk und Fehlerbehebung und arbeite zuverlässig sowie
+            lernbereit im IT-Team.Aktuell suche ich eine Stelle, in der ich meine Fähigkeiten weiterentwickeln und
+            praktische Erfahrungen sammeln kann.
+          </p>
+          <h2 class="section-subtitle fade-in"><i class="fa-solid fa-briefcase"></i> Praxiserfahrung</h2>
+          <div class="timeline fade-in">
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>HELPDESK-TECHNIKER</b> — <span class=exp-company>Mibtech</span> | Casablanca, MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> seit 08/2023</span>
+                </div>
+                <ul class=exp-list>
+                  <li>Support und Schulung der Mitarbeiter</li>
+                  <li>1st Level IT-Support</li>
+                  <li>Verwaltung von Benutzerkonten und Zugriffsrechten (Active Directory)</li>
+                  <li>Installation & Wartung von Hard- und Software</li>
+                  <li>Ansrechpartner für Mitarbeiter bei technischen Problemen</li>
+                  <li>Bearbeitung von IT-Anfragen telefonisch, per Mail oder Fernwartung (VNC)</li>
+                  <li>Dokumentation und Nachverfolgung in einem Ticketsystem GLPI</li>
+                  <li>Installation und Verwaltung von Druckern und Peripheriegeräten</li>
+                </ul>
+              </div>
+            </div>
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>INFORMATIKTECHNIKER</b> — <span class=exp-company>TILCO GmbH</span> | Tanger, MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> 12/2022 – 08/2023</span>
+                </div>
+                <ul class=exp-list>
+                  <li>Installation und Konfiguration von Hard- und Software</li>
+                  <li>Fehleranalyse und Troubleshooting</li>
+                  <li>Verwaltung von Benutzerkonten und Zugriffsrechten (Active Directory)</li>
+                  <li>Diagnose, Reparatur und Behebung von Scan-Geräten</li>
+                  <li>Ansprechpartner für Mitarbeiter bei technischen Problemen</li>
+                  <li>Installation und Verwaltung von Druckern und Peripheriegeräten</li>
+                </ul>
+              </div>
+            </div>
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>Praktikum in Informatikdienst</b> — <span class=exp-company>N2ST GmbH </span> | Fkih Ben Salah,
+                    MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> 03/2022 – 04/2022</span>
+                </div>
+                <ul class=exp-list>
+                  <li>Installation und Verwaltung von Druckern und Peripheriegeräten</li>
+                  <li>Installation & Wartung von Hard- und Software</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h2 class="section-subtitle fade-in"><i class="fa-solid fa-graduation-cap"></i> Bildungsweg</h2>
+          <div class="timeline fade-in">
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>Berufsorientierter Bachelor in Systemingenieurwesen – Netzwerke und Sicherheit</b>
+                    <span class=exp-company>Amerikanische Universität für Berufsstudien (AUPS)</span> | Casablanca, MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> 10/2024 – 07/2025</span>
+                </div>
+              </div>
+            </div>
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>Diplom als Fachtechniker in Techniken der Computernetzwerke</b>
+                    <span class=exp-company>Institut für angewandte Technologie NTIC </span>
+                    | Beni Mellal, MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> 09/2020 – 07/2022</span>
+                </div>
+              </div>
+            </div>
+            <div class=timeline-item>
+              <div class=timeline-dot></div>
+              <div class=timeline-content>
+                <div class=exp-header>
+                  <span class=exp-role>
+                    <b>Abitur Experimentelle Wissenschaften, Biowissenschaften und Geowissenschaften</b> —
+                    <span class=exp-company>OMAR IBNOU EL KHATTAB</span> | Bradia Fkih Ben Salah, MA
+                  </span>
+                  <span class=exp-date><i class="fa-solid fa-calendar-days"></i> 09/2017 – 07/2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="section-subtitle fade-in"><i class="fa-solid fa-laptop-code"></i> Kenntnisse</h2>
+          <div class="cv-block fade-in">
+            <p><b>Technishe Kenntnisse</b></p>
+            <ul>
+              <li> Betriebssystem : Windows & Linux </li>
+              <li> Routing & Switching (OSPF, RIPv2, EIGRP, TCP/IP, VLAN, STP, EtherChannel{LACP / PAgP})</li>
+              <li> Ticketsystem : GLPI </li>
+              <li> Windows-Server-Administration (AD, DHCP, DNS, GPO, WSUS)</li>
+              <li> Linux-Administration: Red Hat (Grundkenntnisse)</li>
+              <li> Python (Grundkenntnisse)</li>
+              <li> Veeam Backup & Replication (Grundkenntnisse)</li>
+              <li> Bash / PowerShell (Basis)</li>
+              <li> Hyper-v, Vmware und Microsoft Azure </li>
+              <li> HTML & CSS (Grundkenntnisse)</li>
+
+            </ul>
+            <p><b>Sprachen</b></p>
+            <ul>
+              <li> Arabisch : Muttersprache</li>
+              <li> Deutsch : Fortgeschritten</li>
+              <li> Englisch : Fortgeschritten </li>
+              <li> Französisch : Kommunikationskenntnisse </li>
+
+            </ul>
+
+            </ul>
+            <p><b> Zertifikate</b></p>
+            <ul>
+              <li> Introduction to Cybersecurity (cisco)</li>
+              <li> TELC Deutsch B2 </li>
+            </ul>
+            <p><b> Hobbys und INTERESSEN</b></p>
+            <ul>
+              <li> Sport (Fitness, Fußball)</li>
+              <li> Reisen & neue Kulturen kennenlernen </li>
+              <li> IT-Sicherheit & neue Technologien </li>
+              <li> Online-Kurse & Selbststudium </li>
+            </ul>
+
+          </div>
+
+        </article>
+        <article id=motivation class="panel fade-in" style=text-align:justify>
+          <h2 class=section-heading><i class="fa-solid fa-pen"></i> Motivationsschreiben</h2>
+          <p>
+            <br>
+          <p>Mouad LISSOUFI<br>
+            N12, Bradia Beni Mellal, Marokko<br>
+            23000 Beni Mellal<br>
+            +212 6 48 21 97 75<br>
+            mouadlissoufi@gmail.com<br>
+          </p><br>
+          <p style="padding-left: 70%;">Beni Mellal, 06.04.2026</p><br>
+          <br>
+          <h4>Bewerbung um eine Stelle als Fachinformatiker Systeminformation 2026</h4> <br>
+          <br>
+          Sehr geehrte Damen und Herren,<br>
+          Über die Agentur für Arbeit bin ich mit großem Interesse auf Ihre Stelle aufmerksam geworden und habe
+          die Ausschreibung gelesen. Hiermit bewerbe ich mich um eine Stelle als Fachinformatiker
+          Systeminformation. Nach meinem Abitur habe ich zunächst ein zweijähriges Fachtechniker-Diplom im
+          Bereich IT-Netzwerktechnik absolviert. Anschließend habe ich mein Studium fortgesetzt und einen
+          beruflichen Bachelorabschluss im Bereich Informationstechnologie erworben. Mein Fachtechniker-Diplom
+          wurde bereits von der ZAB bewertet.<br><br>
+          Während meiner aktuellen Tätigkeit als IT-Helpdesk-Techniker bin ich für die Betreuung von Anwendern
+          sowie für die Installation, Konfiguration und Wartung von Hard- und Software verantwortlich. Dabei habe
+          ich Benutzerkonten im Active Directory verwaltet, IT-Störungen im 1st-Support analysiert und gelöst sowie
+          Arbeitsplätze, Drucker und Netzwerkgeräte eingerichtet. Durch meine Arbeit habe ich gelernt, strukturiert
+          und lösungsorientiert zu arbeiten sowie technische Probleme verständlich zu erklären. Teamarbeit, eine
+          freundliche Kommunikation mit Anwendern und die sorgfältige Dokumentation von IT-Systemen und
+          Supportfällen gehören zu meinen täglichen Arbeitsgewohnheiten.<br><br>
+          Darüber hinaus bringe ich gute Kenntnisse in Virtualisierungstechnologien wie Hyper-V und VMware sowie
+          in Cloud-Diensten wie Microsoft Azure mit. Ich verfüge über Grundkenntnisse in Netzwerktechnik (LAN,
+          WLAN, TCP/IP). Außerdem habe ich Ticket- und ITSM-Systeme wie GLPI erfolgreich in meinem letzten
+          Projekt eingesetzt und bin motiviert, meine Fähigkeiten in diesen Bereichen weiter auszubauen.<br><br>
+          Heute weiß ich, dass der Beruf des Fachinformatikers für Systeminformation genau mein Ding ist. Deshalb
+          bewerbe ich mich bei Ihnen um die ausgeschriebene Stelle.<br><br>
+          Neben meiner Muttersprache verfüge ich über fortgeschrittene Englischkenntnisse und
+          Französischkenntnisse auf Kommunikationsniveau. Außerdem habe ich Deutsch gelernt und besitze ein
+          B2-Zertifikat des Telc-Instituts.<br><br>
+          Da ich derzeit in Marokko lebe, möchte ich meine berufliche Zukunft gerne in Deutschland aufbauen. Bei
+          einer Zusage werde ich selbstverständlich sofort die notwendigen Schritte für das Visumverfahren einleiten
+          und bin bereit, für die Arbeit nach Deutschland umzuziehen.<br><br>
+          Gerne würde ich meine Motivation und meine Kenntnisse in einem persönlichen Gespräch näher vorstellen.
+          Über eine Einladung zum Vorstellungsgespräch freue ich mich sehr.<br><br>
+
+          Mit freundlichen Grüßen,<br>
+          <br>
+          <b>Mouad Lissoufi</b>
+          </p>
+        </article>
+        <article id=photos class="panel fade-in">
+          <h2 class=section-heading><i class="fa-solid fa-camera"></i> Schulzeugnisse </h2>
+          <div class=gallery>
+
+            <img src="images/doc-traduction_page-0001.jpg" alt="Dokument 1">
+            <img src="images/doc-traduction_page-0002.jpg" alt="Dokument 2">
+            <img src="images/doc-traduction_page-0004.jpg" alt="Dokument 4">
+            <img src="images/doc-traduction_page-0005.jpg" alt="Dokument 5">
+            <img src="images/doc-traduction_page-0006.jpg" alt="Dokument 6">
+            <img src="images/doc-traduction_page-00011.jpg" alt="Dokument 11">
+            <img src="images/doc-traduction_page-00012.jpg" alt="Dokument 12">
+
+          </div>
+          <!-- DOWNLOAD BUTTON -->
+          <div class="download-all-container">
+            <a href="Schulzeugnisse .pdf" class=btn-download target=_blank>
+              <i class="fa-solid fa-file-lines"></i> Schulzeugnisse hunterladen</a>
+          </div>
+          <div id=imageOverlay class=image-overlay>
+            <span id=closeOverlay class=close-btn>&times;</span>
+            <span id=prevImage class=nav-arrow>&#10094;</span>
+            <img id=overlayImage src="" alt=Fullscreen>
+            <span id=nextImage class=nav-arrow>&#10095;</span>
+          </div>
+        </article>
+        <article id=photos1 class="panel fade-in">
+          <h2 class=section-heading><i class="fa-solid fa-camera"></i> Arbeitszeugnisse </h2>
+          <div class=gallery>
+
+            <img src="images/doc-traduction_page-0007.jpg" alt="Dokument 7">
+            <img src="images/doc-traduction_page-0008.jpg" alt="Dokument 8">
+            <img src="images/doc-traduction_page-0009.jpg" alt="Dokument 9">
+            <img src="images/doc-traduction_page-0010.jpg" alt="Dokument 10">
+
+          </div>
+          <!-- DOWNLOAD BUTTON -->
+          <div class="download-all-container">
+            <a href="Arbeitszeugnisse.pdf" class=btn-download target=_blank>
+              <i class="fa-solid fa-file-lines"></i>Arbeitszeugnisse hunterladen</a>
+          </div>
+          <div id=imageOverlay class=image-overlay>
+            <span id=closeOverlay class=close-btn>&times;</span>
+            <span id=prevImage class=nav-arrow>&#10094;</span>
+            <img id=overlayImage src="" alt=Fullscreen>
+            <span id=nextImage class=nav-arrow>&#10095;</span>
+          </div>
+
+        </article>
+        <article id=photos2 class="panel fade-in">
+          <h2 class=section-heading><i class="fa-solid fa-camera"></i> Sprachnachweis </h2>
+          <div class=gallery>
+            <img src="images/MOUAD LISSOFI_page-0001.jpg" alt="Dokument 1">
+          </div>
+          <!-- DOWNLOAD BUTTON -->
+          <div class="download-all-container">
+            <a href="Zertifikat B2.pdf" class=btn-download target=_blank download>
+              <i class="fa-solid fa-file-lines"></i>Sprachnachweis hunterladen</a>
+          </div>
+          <div id=imageOverlay class=image-overlay>
+            <span id=closeOverlay class=close-btn>&times;</span>
+            <span id=prevImage class=nav-arrow>&#10094;</span>
+            <img id=overlayImage src="" alt=Fullscreen>
+            <span id=nextImage class=nav-arrow>&#10095;</span>
+          </div>
+
+        </article>
+      </section>
+    </div>
+  </main>
+  <div id=welcomeModal class=welcome-modal>
+    <div class=welcome-box>
+      <button id=closeWelcome class=close-btn aria-label=Schließen>&times;</button>
+      <h2>Guten Tag!</h2>
+      <p>
+        Vielen Dank für Ihre Mühe und dafür, dass Sie meine Webseite besuchen.<br>
+        Ich freue mich, Ihnen meine Arbeit und Qualifikationen vorzustellen.
+      </p>
+      <button id=okWelcome class=ok-btn>Vielen Dank</button>
+    </div>
+  </div>
+  <!-- WhatsApp Floating Button (Slide-In Label) -->
+  <a href="https://wa.me/212648219775" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    <span class="whatsapp-label">WhatsApp</span>
+  </a>
+
+
+
+
+  <footer class=site-footer>© 2026 Mouad Lissoufi | IT </footer>
+  <script src=js.js></script>
+
+</body>
+
+</html>
